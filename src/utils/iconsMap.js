@@ -20,5 +20,3 @@ export const iconsLoaded = new Promise((resolve, reject) => {
 		resolve(true);
 	})
 })
-
-export default iconsMap;

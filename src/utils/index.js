@@ -1,0 +1,1 @@
+export { iconsMap, iconsLoaded } from './iconsMap'

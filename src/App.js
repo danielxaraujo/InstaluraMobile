@@ -1,5 +1,5 @@
 import { Navigation } from 'react-native-navigation';
-import { iconsLoaded, iconsMap } from './utils/iconsMap';
+import { iconsLoaded, iconsMap } from './utils';
 
 import { HomeScreen, DetailScreen, DrawerScreen, LightboxScreen } from './screens';
 
