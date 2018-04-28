@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { ScrollView, Text, Button } from 'react-native';
 
+export let rootNavigator = null
+
 export default class HomeScreen extends Component {
 	constructor(props) {
 		super(props);
 		this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+		rootNavigator = this.props.navigator
 	}
 	onNavigatorEvent = event => {
 		console.log(event);

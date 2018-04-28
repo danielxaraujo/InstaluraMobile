@@ -10,8 +10,8 @@ export default class DrawerScreen extends Component {
 				<Button
 					title="Details..."
 					onPress={() => {
-						this.props.navigator.toggleDrawer({});
-						this.props.navigator.push({ screen: 'Detail' });
+						rootNavigator.toggleDrawer({});
+						rootNavigator.push({ screen: 'Detail', title: 'Detail Screen' });
 					}}
 				/>
 			</View>
