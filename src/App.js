@@ -1,18 +1,12 @@
-import { Platform } from 'react-native';
 import { Navigation } from 'react-native-navigation';
-import { Icon } from 'react-native-vector-icons/Octicons';
-import { registerScreens } from './Navigation';
 import { iconsLoaded, iconsMap } from './utils/iconsMap';
 
-import { HomeScreen } from './screens/HomeScreen';
-import { DetailScreen } from './screens/DetailScreen';
-import { DrawerScreen } from './screens/DrawerScreen';
+import { HomeScreen, DetailScreen, DrawerScreen, LightboxScreen } from './screens';
 
-export function registerScreens() {
-	Navigation.registerComponent('Home', () => HomeScreen);
-	Navigation.registerComponent('Detail', () => DetailScreen);
-	Navigation.registerComponent('Drawer', () => DrawerScreen);
-}
+Navigation.registerComponent('Home', () => HomeScreen);
+Navigation.registerComponent('Detail', () => DetailScreen);
+Navigation.registerComponent('Drawer', () => DrawerScreen);
+Navigation.registerComponent('LightboxScreen', () => LightboxScreen);
 
 iconsLoaded.then(() => {
 	Navigation.startSingleScreenApp({
