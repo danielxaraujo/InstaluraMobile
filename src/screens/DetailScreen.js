@@ -7,7 +7,7 @@ export default class DetailScreen extends Component {
 		topBarElevationShadowEnabled: true,
 		statusBarTextColorScheme: 'light',
 		navBarBackgroundColor: '#3498db',
-		navBarButtonColor: '#FFFFFF'
+		navBarButtonColor: '#FFFFFF',
 	}
 	render() {
 		return (

@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, Button } from 'react-native';
+import { View, ScrollView, Text, Button } from 'react-native';
 
 export let rootNavigator = null
 
 export default class HomeScreen extends Component {
+	static navigatorStyle = {
+		largeTitle: true,
+		topBarElevationShadowEnabled: true,
+		statusBarTextColorScheme: 'light',
+		navBarBackgroundColor: '#3498db',
+		navBarButtonColor: '#FFFFFF'
+	}
 	constructor(props) {
 		super(props);
+		this.state = {};
 		this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
 		rootNavigator = this.props.navigator
 	}
@@ -45,9 +53,9 @@ export default class HomeScreen extends Component {
 				/>
 				<Button
 					title="Show LighBox"
-					onPress={ this.showLightBox }
+					onPress={this.showLightBox}
 				/>
 			</ScrollView>
-		);
+		)
 	}
 }
